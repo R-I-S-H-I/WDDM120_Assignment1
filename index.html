@@ -2,16 +2,40 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Slow Spoke</title>
+        <title>Slowspoke</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div>
-            <label for="long">Enter the longitude of the location</label><br>
-            <input type="text" id="long" name="long" required><br>
-            <label for="lat">Enter the latitude of the location</label><br>
-            <input type="text" id="lat" name="lat" required><br>
-            <input type="button" value="Check the Weather" class="submit_btn">
-        </div>
-        <script src="app.js"></script>
+        <header class="page-header">
+            <h1 class="page-title">Slowspoke</h1>
+        </header>
+        <main class="content">
+            <div class="form-wrapper">
+                <form>
+                    <label for="long">Enter the longitude of the location</label><br>
+                    <input type="text" id="long_id" name="long" required><br>
+                    <label for="lat">Enter the latitude of the location</label><br>
+                    <input type="text" id="lat_id" name="lat" required><br>
+                    <input type="button" value="Check the Weather" class="submit_btn">
+                </form>
+            </div>
+            <section class="results">
+                <article class="result-crad">
+                    <div class="loc-desc">
+                        <h3 id="country-code"></h3>
+                        <h4 id="city-name"></h4>
+                    </div>
+                    <div class="weather-info">
+                        <p id="temp"></p>
+                        <p id="aqi"></p>
+                        <p id="sunrise-time"></p>
+                        <p id="sunset-time"></p>
+                        <p id="timezone"></p>
+                        <p id="weather-desc"></p>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <script tyep="text/javascript" src="app.js"></script>
     </body>
 </html>
