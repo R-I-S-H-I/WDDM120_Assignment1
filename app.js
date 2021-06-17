@@ -13,7 +13,7 @@ const fecthData = () => {
 	})
 	.then(response => {
 		let result = response.json()
-		console.log(result);
+		console.log(result); //just for debugging
 		result.then(data => {
 			document.getElementById("country-code").innerHTML = "Country code : "+data.data[0].country_code;
 			document.getElementById("city-name").innerHTML = "City : "+data.data[0].city_name;

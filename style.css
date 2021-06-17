@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("images/fotografierende-3ENfnnjbdJs-unsplash.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+}
+.page-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 1.5em;
+    background-color: black;
+}
+.page-title{
+    font-size: 3em;
+    color: rgba(209, 143, 0, 0.719);
+    text-shadow: 0px 5px 8px rgb(124, 86, 86);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1.5em;
+    background-color: rgba(31, 31, 31, 0.596);
+    width: 75%;
+    margin: 1.5em auto;
+}
+#content-p1, #content-p2{
+    font-size: 1.15em;
+    color: white;
+}
+#content-p1 a{
+    text-decoration: none;
+    color: yellow;
+}
+#content-p1 a:hover{
+    background-color: rgb(99, 59, 0);
+    padding: 0.4em;
+    transform: scale(1.017);
+    transition: ease-out 0.3s;
+}
+#content-p2 span{
+    font-weight: 600;
+    text-decoration: underline;
+    color: blanchedalmond;
+}
+.form-wrapper{
+    justify-self: center;
+    align-self: center;
+    padding: 2.5em;
+    background-color: rgba(185, 185, 185, 0.568);
+    padding: 3em;
+    margin: 1.5em 0;
+    border-radius: 3em;
+}
+.form-label{
+    font-size: 1.2em;
+    color:brown;
+    font-weight: 600;
+}
+#long_id, #lat_id{
+    margin: 1.2em 0;
+    width: 100%;
+    border-radius: 3em;
+    border: 0.3px solid rgba(209, 143, 0, 0.719);
+    outline: none;
+    padding: 0.5em;
+}
+#long_id:focus, #lat_id:focus{
+    width: 103%;
+    background-color: bisque;
+    transition: ease-in 0.2s;
+}
+.submit_btn{
+    padding: 0.8em 0.3em;
+    width: 60%;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+    color: rgb(255, 168, 168);
+    background-color: rgba(63, 0, 0, 0.719);
+    box-shadow: 0px 0.2em 10px rgba(187, 0, 0, 0.541);
+}
+.results{
+    align-self: center;
+    background-color: rgba(250, 235, 215, 0.479);
+    padding: 2em;
+    width: 100%;
+    border-radius: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loc-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(43, 24, 24, 0.486);
+    padding: 0.5em;
+    border-radius: 3em;
+    gap: 1em;
+    color: white
+}
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    background-color: rgba(206, 206, 206, 0.486);
+    padding: 0.5em;
+    border-radius: 3em;
+    margin: 0.5em 0;
+}
